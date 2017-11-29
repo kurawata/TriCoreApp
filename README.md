@@ -1,0 +1,2 @@
+# TriCoreApp
+Tri Core app
