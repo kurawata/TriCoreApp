@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriCoreShop", "TriCoreShop\TriCoreShop.csproj", "{7383A432-632A-403D-A543-B2D053D54CDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriCoreShop", "TriCoreShop\TriCoreShop.csproj", "{7383A432-632A-403D-A543-B2D053D54CDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriCoreApp.Infrastructure", "TriCoreApp.Infrastructure\TriCoreApp.Infrastructure.csproj", "{9BBDD74A-F562-4034-BCD9-D840D0E9BD84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriCoreApp.Utilities", "TriCoreApp.Utilities\TriCoreApp.Utilities.csproj", "{884936F2-3AD1-4E5E-B0CD-CED31C2991C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriCoreApp.Data", "TriCoreApp.Data\TriCoreApp.Data.csproj", "{4B6B9ED1-E882-4310-9096-719CE9321DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriCoreApp.Data.EF", "TriCoreApp.Data.EF\TriCoreApp.Data.EF.csproj", "{4282B9A8-4257-4A61-9F0F-24EAA3177B37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriCoreApp.Application", "TriCoreApp.Application\TriCoreApp.Application.csproj", "{75176F4B-4C63-4468-AAED-78DF3AD44C89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{0148923C-03C7-4CB6-BFC1-B27EDF603E1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{FF2A6669-CEB1-4585-8505-80766251948C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{1ABDA4A2-C82A-45F3-9165-605DB4F3D16E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infrastructure", "4-Infrastructure", "{3990999E-6D67-4208-AB66-924801BB0977}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +33,37 @@ Global
 		{7383A432-632A-403D-A543-B2D053D54CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7383A432-632A-403D-A543-B2D053D54CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7383A432-632A-403D-A543-B2D053D54CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBDD74A-F562-4034-BCD9-D840D0E9BD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBDD74A-F562-4034-BCD9-D840D0E9BD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBDD74A-F562-4034-BCD9-D840D0E9BD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBDD74A-F562-4034-BCD9-D840D0E9BD84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884936F2-3AD1-4E5E-B0CD-CED31C2991C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884936F2-3AD1-4E5E-B0CD-CED31C2991C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884936F2-3AD1-4E5E-B0CD-CED31C2991C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884936F2-3AD1-4E5E-B0CD-CED31C2991C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B6B9ED1-E882-4310-9096-719CE9321DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B6B9ED1-E882-4310-9096-719CE9321DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B6B9ED1-E882-4310-9096-719CE9321DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B6B9ED1-E882-4310-9096-719CE9321DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4282B9A8-4257-4A61-9F0F-24EAA3177B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4282B9A8-4257-4A61-9F0F-24EAA3177B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4282B9A8-4257-4A61-9F0F-24EAA3177B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4282B9A8-4257-4A61-9F0F-24EAA3177B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75176F4B-4C63-4468-AAED-78DF3AD44C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75176F4B-4C63-4468-AAED-78DF3AD44C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75176F4B-4C63-4468-AAED-78DF3AD44C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75176F4B-4C63-4468-AAED-78DF3AD44C89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7383A432-632A-403D-A543-B2D053D54CDF} = {0148923C-03C7-4CB6-BFC1-B27EDF603E1B}
+		{9BBDD74A-F562-4034-BCD9-D840D0E9BD84} = {3990999E-6D67-4208-AB66-924801BB0977}
+		{884936F2-3AD1-4E5E-B0CD-CED31C2991C3} = {3990999E-6D67-4208-AB66-924801BB0977}
+		{4B6B9ED1-E882-4310-9096-719CE9321DFC} = {1ABDA4A2-C82A-45F3-9165-605DB4F3D16E}
+		{4282B9A8-4257-4A61-9F0F-24EAA3177B37} = {1ABDA4A2-C82A-45F3-9165-605DB4F3D16E}
+		{75176F4B-4C63-4468-AAED-78DF3AD44C89} = {FF2A6669-CEB1-4585-8505-80766251948C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7569E736-0CDB-499D-9372-399F31C46099}

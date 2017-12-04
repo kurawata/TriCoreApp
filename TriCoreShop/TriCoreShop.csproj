@@ -18,4 +18,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TriCoreApp.Application\TriCoreApp.Application.csproj" />
+    <ProjectReference Include="..\TriCoreApp.Data.EF\TriCoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\TriCoreApp.Data\TriCoreApp.Data.csproj" />
+    <ProjectReference Include="..\TriCoreApp.Infrastructure\TriCoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\TriCoreApp.Utilities\TriCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
